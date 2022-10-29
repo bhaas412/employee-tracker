@@ -7,12 +7,12 @@ const conn = mysql.createConnection(
       host: 'localhost',
       user: 'root',
       password: 'Sqlhab214?',
-      database: 'employees'
+      database: 'employeetracker_db'
     },
     console.log(`Connected to the employees database.`)
   );
 
-  connection.connect(function (err) {
+  conn.connect(function (err) {
     if (err) throw err;
   });
   
